@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  color: #83869a;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+}
+
+main {
+  margin-top: 38px;
+  margin-bottom: 80px;
+}
+.container {
+  margin: 16px;
+  margin-bottom: 0;
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.header-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile--img {
+  max-width: 100%;
+  margin-top: 46px;
+}
+
+.tablet--img {
+  display: none;
+}
+
+.main-logo {
+  width: 111px;
+  height: 27px;
+}
+
+/* Main Section */
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 40px;
+}
+
+.testimonial-header {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  padding: 28px 24px;
+  border-radius: 10px;
+  line-height: 32px;
+}
+
+.testimonial-card {
+  padding: 56px 29px 32px 28px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  position: relative;
+}
+
+.testimonial-card p {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+}
+
+/* typohrapgy section */
+
+h1,
+h2,
+h3 {
+  color: #13183f;
+}
+
+p {
+  line-height: 26px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* Buttons */
+button {
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 24px;
+  color: #fff;
+}
+
+.btn--dark {
+  background-color: #13183f;
+}
+
+.colored-btn {
+  padding: 19px 32px;
+  background: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+}
+
+.footer-btn {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+}
+
+/* L V H A */
+
+a:link,
+a:visited {
+  color: #f02aa6;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 16px 42px 16px;
+  align-items: center;
+  background-color: #13183f;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(/assets/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position: top -50px right -250px;
+    background-size: 640px;
+    z-index: 99;
+  }
+  .mobile--img {
+    display: none;
+  }
+
+  .header-text-box {
+    margin-top: 100px;
+    width: 398px;
+    margin-bottom: 250px;
+  }
+
+  .testimonial-header {
+    width: 350px;
+    height: 322px;
+    padding-top: 64px;
+  }
+
+  .grid-3-cols {
+    grid-template-columns: auto auto;
+  }
+
+  footer {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(/assets/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top -100px right -150px;
+    background-size: 991px;
+    z-index: 99;
+  }
+
+  .container {
+    width: 1200px;
+    margin: 45px auto 200px auto;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .header-text-box {
+    margin-top: 150px;
+    width: 457px;
+    margin-bottom: 250px;
+  }
+
+  .testimonial-header {
+    width: 350px;
+    height: 322px;
+    padding-top: 64px;
+  }
+  .grid-3-cols {
+    grid-template-columns: auto auto auto;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  .btn--dark:hover {
+    background-color: #666ca3;
+  }
+
+  .colored-btn:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  }
+
+  .footer-btn:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  }
+
+  .main-logo:hover {
+    cursor: pointer;
+  }
+
+  footer {
+    justify-content: space-around;
+  }
+}
